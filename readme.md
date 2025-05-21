@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation (RAG) chatbot built with Streamlit, LangChain, 
 <!-- You can replace this with a real screenshot -->
 
 ## 🚀 Features
-💬 Ask questions about your uploaded PDF (e.g., Chemistry textbook)
+💬 Ask questions about Chemistry textbook class 12th
 
 🔎 Retrieval-based: answers only from the book using FAISS vector store
 
