@@ -9,12 +9,14 @@ from langchain.prompts import PromptTemplate
 import os
 
 from langchain_groq import ChatGroq
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
-# Local development fallback
-grok_key = st.secrets.get("grok_key", os.environ["grok_key"])
+# # Local development fallback
+# grok_key = st.secrets.get("grok_key", os.getenv("grok_key"))
+
+grok_key = st.secrets["grok_key"]
 
 
 # ---- Set page config ----
