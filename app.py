@@ -21,7 +21,7 @@ grok_key = st.secrets["grok_key"]
 
 # ---- Set page config ----
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
-st.title("📚 RAG Chatbot with Groq")
+st.title("📚 RAG Chatbot ask topics from class 12th chemistry")
 
 # ---- Initialize session state ----
 if "chat_history" not in st.session_state:
