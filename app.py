@@ -13,6 +13,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# Local development fallback
+grok_key = st.secrets.get("grok_key", os.environ["grok_key"])
+
+
 # ---- Set page config ----
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
 st.title("📚 RAG Chatbot with Groq")
@@ -83,7 +87,7 @@ prompt = PromptTemplate(
 # ---- Load LLM (Groq) ----
 llm = ChatGroq(
     model_name="llama3-70b-8192",  # or llama3-70b-8192, etc.
-    api_key=os.environ["grok_key"]
+    api_key= grok_key
 ).bind()
 
 
